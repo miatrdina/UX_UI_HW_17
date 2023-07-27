@@ -1,42 +1,65 @@
-/* Navbar CSS */
-.inline-block [
-    display: inline-block;
-    vertical-align: top;
-]
-
-.logo {
-    width: 23%;
-    padding: 1%;
+/* My UX Skills Section CSS */
+.mySkills {
+    /* Your section styles go here */
 }
 
-nav {
-    width: 73%;
-    padding: 1%;
+.flexContainer {
+    display: flex;
+    /* Set the flex container direction to row for desktop */
+    flex-direction: row;
+    /* Other flex container styles go here */
 }
 
-ul {
-    width: 50%;
-    margin-left: auto;
+.skill {
+    width: 33%;
+    /* Add margin and padding as needed to create the desired layout */
+    margin: 10px;
+    padding: 20px;
+    /* Additional styles fot the skill elements go here */
 }
 
-/* Hero Image CSS */
-.heroImg {
-    height: 600px;
-    padding: 25px;
+.myWork {
+    /* Your section styles go here */
 }
 
-/* Footer CSS */
-footer {
-    background-color: #373738;
-    padding: 10px;
+.workGrid {
+    display: grid;
+    grid-teplate-columns: repeat(2, 1fr); /* Adjust the number of columns as per design */
+    grid-gap: 20px; /* Add gap between grid items as needed */
+    /* Additional styles for the grid container go here */
 }
 
-footer ul {
-    display: inline-block;
-    vertical-align: top;
-    padding: 0%;
+.project {
+    /* Define named grid areas for your grid items */
+    /* grid-area: project1; */
+   /* grid-area: project2; */
+   /* Additional styles for the grid items go here */
 }
 
-footer li {
-    padding: 5px 10px;
+/* Mobile Media Query */
+@media screen and {max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+    }
+.skill {
+    width: 100%;
+}
+
+.workGrid {
+    grid-template-areas:
+    'project1'
+    'project2';
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+}
+
+.project {
+    grid-area: project1;
+}
+
+.project:last-child {
+    grid-area: project2;
+}
+}
+    
 }

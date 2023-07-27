@@ -19,12 +19,14 @@
 }
 
 .myWork {
-    /* Your section styles go here */
+    width: 33%;
+    margin: 10px;
+    padding: 20px;
 }
 
 .workGrid {
     display: grid;
-    grid-teplate-columns: repeat(2, 1fr); /* Adjust the number of columns as per design */
+    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as per design */
     grid-gap: 20px; /* Add gap between grid items as needed */
     /* Additional styles for the grid container go here */
 }
@@ -37,7 +39,7 @@
 }
 
 /* Mobile Media Query */
-@media screen and {max-width: 600px) {
+@media screen and (max-width: 600px) {
     .flexContainer {
         flex-direction: column;
     }
@@ -60,6 +62,4 @@
 .project:last-child {
     grid-area: project2;
 }
-}
-    
 }
